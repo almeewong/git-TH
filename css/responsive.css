@@ -1,0 +1,44 @@
+/*----------btn----------*/
+@media only screen and (max-width: 768px){
+    .btn {
+	border-radius: 5px;
+	position: relative;
+	transition: all 0.15s ease-in-out;
+	display: inline-block;
+    width: 100%;
+    /* margin: 5px 1px; */
+}
+    /*-- 404 --*/
+    .page404 img{
+    width: 150px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #ffffff;
+    padding-bottom: 15px;
+}
+    .page404 p{
+    margin: 0;
+}
+    .page404 p:nth-of-type(1){
+    /* font-size: 16px; */
+}
+}
+@media only screen and (min-width: 768px){
+   .page404 img{
+    width: 150px;
+    margin-right: 10px;
+    border-right: 3px solid #ffffff;
+    padding-right: 15px;
+}
+    .page404 p{
+    margin: 0 0 0 10px;
+}
+    .page404 p:nth-of-type(1){
+    /* font-size: 16px; */
+}
+    .verification{
+    padding: .5rem 1rem;
+}
+}
+/*----------iphone5 / SE----------*/
+
+

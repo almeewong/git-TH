@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+<!-- Mobile Specific Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- styles -->
+<link href="css/table.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+<!--共用CSS-->
+<link href="css/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link href="css/slider.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="css/responsive.css">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<!-- hint提示文字 CSS -->
+<link rel="stylesheet" href="css/hint.css">
+<!-- ico 圖示-->
+<link href="images/common/favicon.ico" rel="shortcut icon" />
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black nav_ham">
+  <div class="container"> <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+    <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
+        <li class="nav-item"> <a class="nav-link nav-style" href="payment-step1.html">Refill</a> </li>
+        <li class="nav-item "> <a class="nav-link nav-style" href="news-list.html">News</a> </li>
+        <li class="nav-item"> <a class="nav-link nav-style" href="faq.html">Support</a> </li>
+        <li class="nav-item"> <a class="nav-link nav-style" href="about.html">About us</a> </li>
+      </ul>
+      <ul class="navbar-nav ml-auto" style="display: none">
+        <li class="nav-item"> <a class="nav-link nav-border" href="#">Create account</a> </li>
+        <li class="nav-item"> <a class="nav-link nav-border" href="#">Login</a> </li>
+      </ul>
+	  <ul class="navbar-nav ml-auto">
+        <li class="nav-item account_pic hint--bottom" data-hint="efae6eafb2090378ad303d60b4dea208"> 
+			<span class="nav-link loninsize d-flex align-items-center  " href="#">
+				<span class="displyin mr-2 mr-lg-0"><img src="images/nav_icon_wg.png" alt=""  ></span>
+				<span class="displyin d-lg-none">Hello! </span>
+				<span class="displyin d-lg-none ml-2">efae6eafb2090378ad303d60b4dea208 </span>
+				 
+			</span>
+		</li>
+		<li class="nav-item"> <a class="nav-link nav-border mt-1" href="edit-account.html">MEMBER<span class="circle-gray"></span></a> </li>
+        <li class="nav-item"> <a class="nav-link nav-border mt-1" href="index.html">Log out</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="breadcrumb-wrap mt-3">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+      <li class="breadcrumb-item"><a href="edit-account.html">เฉพาะสมาชิก<!-- 會員專區 --></a></li>
+      <li class="breadcrumb-item active">ประวัติการเติมเงิน<!-- 儲值紀錄 --></li>
+    </ol>
+    <div class="breadcrumb-title">ประวัติการเติมเงิน<!-- 儲值紀錄 --></div>
+  </div>
+</div>
+<!-- Page Content -->
+<!-- 麵包屑結束 -->
+<div class="container" >
+ <div class="row">
+            <div class="col-12 d-md-none mb-2">
+                 <div class="form-row mobile_top_nav align-items-center">
+        <div class="col-4 text-center "><a href="edit-account.html#main" class="mobile_top_nav_default">เฉพาะ<br>สมาชิก</a></div>
+        <div class="col-4 text-center"><a href="payment-list.html#main" class="mobile_top_nav_default">ประวัติ <br>เติมเงิน </a></div>
+        <div class="col-4 text-center"><a href="request-list.html#main" class="mobile_top_nav_active">ประวัติ <br>ติดต่อ <span class="circle_gray_verification circle-dash"></span></a></div>
+        </div>
+        </div>
+        </div>
+        
+  <div class="row">
+    <div class="col-sm-12 col-lg-4 sidebar-nav d-none d-md-block">
+      <ul>
+        <!--狀況說明 : 提示資料大於1-9筆-->
+        <li><a href="edit-account.html" class="">เฉพาะสมาชิก</a></li>
+        <!--狀況說明 : 等級不足時出現的情況-->
+        <li><a href="payment-list.html">ประวัติเติมเงิน <span class="circle-gray"></span> </a> </li>
+        <!--狀況說明 : 提示資料大於10筆以上-->
+        <li><a href="javascript:void(0)" class="active">ประวัติติดต่อ<span class="circle-gray"></span> </a></li>
+      </ul>
+    </div>
+    <div class="col-sm-12 col-lg-8 text-white">
+      <div class="d-sm-flex form-group">
+            <h5 class="text-md-right mobile-text-left mr-3 font-weight-bold">หมายเลขคำถาม :<!--提問單號--></h5>
+            <h5 class="text-md-right mobile-text-left">123456789012</h5>
+      </div>
+	  <hr class="hrline mt-5">
+      <div class="text-center mt-5 mb-3">
+        <button class="btn btn-danger record_open record_toggle">ขยายเนื้อหาคำถาม<!--展開問題內容--></button>
+      </div>
+	  <div class=" record_page">
+	  	<h5 class="mt-30 mb-20 font-weight-bold">เนื้อหาคำถาม <!-- 問題內容--></h5>
+	  	<div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label class=" text-white">ประเภทคำถาม<!-- 問題類型 --> </label>
+          <input type="text" class="form-control" placeholder="ปัญหาเกี่ยวกับเกม" disabled="disabled" >
+        </div>
+        <div class="col-md-6 mb-3">
+          <label class=" text-white">รายการ/เกม <!-- 項目/遊戲 -->  </label>
+          <input type="text" class="form-control" placeholder="WeGames遊戲平台" disabled="disabled">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label class=" text-white">เซิร์ฟเวอร์<!-- 伺服器--> </label>
+          <input type="text" class="form-control" placeholder="無" disabled="disabled">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label class=" text-white">ตัวละคร <!-- 角色 -->  </label>
+          <input type="text" class="form-control" placeholder="無" disabled="disabled">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label class=" text-white">เบอร์มือถือ<!-- 手機號碼 --> </label>
+          <input type="email" class="form-control" placeholder="1234567890" disabled="disabled">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label class=" text-white">E-mail  </label>
+          <input type="email" class="form-control" placeholder="หัวข้อคำถามหัวข้อคำถามหัวข้อคำถามหัวข้อคำถามหัวข้อคำถามหัวข้อคำถามหัวข้อคำถามหัวข้อคำถาม" disabled="disabled">
+        </div>
+        <div class="col-md-12 mb-3">
+          <label class=" text-white">หัวข้อคำถาม <!-- 問題標題 -->  </label>
+          <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="หัวข้อคำถามหัวข้อคำถามหัวข้อคำถามหัวข้อคำถามหัวข้อคำถามหัวข้อคำถามหัวข้อคำถามหัวข้อคำถาม" disabled="disabled">
+        </div>
+        <div class="col-md-12 mb-3">
+          <label class=" text-white">อธิบายคำถาม <!-- 問題描述 --> </label>
+          <textarea class="form-control" rows="5" placeholder="อธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถามอธิบายคำถาม" disabled="disabled"></textarea>
+        </div>
+        <div class="col-md-12 mb-3 uploader">
+          <label class=" text-white">อัพโหลดรูปภาพที่เกี่ยวข้อง <!-- 上傳相關圖片 --></label>
+		  <div class="red-point-no-small mb-5">(คุณได้อัพโหลดXภาพ，เพื่อปกป้องความเป็นส่วนตัวของคุณ จะไม่แสดงรูปภาพที่นี่)</div>
+        </div>
+        <div class="col-sm-12 text-center">
+          <div class="clearfix"></div>
+         <button class="btn btn-danger record_hide record_open">ย่อเนื้อหาคำถาม<!--收合問題內容--></button>
+        </div>
+      </div>
+	  </div>
+	  <hr class="hrline mt-5">
+      <h5 class="mt-5 mb-4 font-weight-bold">บันทึกคำถามและคำตอบ <!-- 問答紀錄--></h5>
+      <div class="col-sm-12 pd20">
+        <div class="row">
+          <div class="mgb20"><span class="separator"></span> </div>
+          <div class="col-sm-12" align="left">
+            <div class="speech-bubble speech-bubble-left"> <span class=" alert-chat-role-red "> <i class="fa fa-user-circle fa-2x"></i> </span>
+              <p class="alert-chat-left"> ข้อสังเกตข้อสังเกตข้อสังเกตข้อสังเกตข้อสังเกตข้อสังเกตข้อสังเกตข้อสังเกตข้อสังเกตข้อสังเกตข้อสังเกตข้อสังเกตข้อสังเกตข้อสังเกต <span><i class="fa fa-clock-o"></i> 2016/11/01 20:15</span></p>
+            </div>
+          </div>
+          
+          <!--用戶回應--->
+          
+          <div class="col-sm-12" align="right">
+            <div class="speech-bubble speech-bubble-right" align="right"> <span class=" alert-chat-role-black "> <i class="fa fa-user-circle fa-2x"></i> </span>
+              <p class="alert-chat-right mgb20"> คำถามคำถามคำถามคำถามคำถามคำถามคำถามคำถามคำถามคำถามคำถามคำถามคำถามคำถาม<br>
+				(คุณได้อัพโหลดXภาพ，เพื่อปกป้องความเป็นส่วนตัวของคุณ จะไม่แสดงรูปภาพที่นี่)
+                <span><i class="fa fa-clock-o"></i> 2016/11/01 23:45</span> </p>
+            </div>
+          </div>
+          
+          <!--wg 回應-->
+          
+          <div class="col-sm-12" align="left">
+            <div class="speech-bubble speech-bubble-left"> <span class=" alert-chat-role-red "> <i class="fa fa-user-circle fa-2x"></i> </span>
+              <p class="alert-chat-left"> ข้อสังเกตข้อสังเกตข้อสังเกตข้อสังเกตข้อสังเกตข้อสังเกตข้อสังเกต<br>
+                <span><i class="fa fa-clock-o"></i> 2016/11/01 23:15</span></p>
+            </div>
+          </div>
+        </div>
+        <h5 class="text-white mt-5">ถามคำถามต่อ <!-- 繼續提問 --> </h5>
+        <textarea class="form-control" rows="3" placeholder=""></textarea>
+        <!-- 客服人員將儘速為您處理問題，敬請耐心稍候。-->
+        <div class="row mt-30">
+        <div class="col-md-12 uploader">
+          <h5  class=" text-white">อัพโหลดรูปภาพที่เกี่ยวข้อง <!-- 上傳相關圖片 --> <span class="red">*</span> </h5>
+          <div class="queueList">
+            <div id="dndArea" class="placeholder">
+              <div id="filePicker" class="webuploader-container mb-2">
+               <div class="add_pic">
+                   <i class="fas fa-image" ></i>
+               </div>
+                <div class="webuploader-pick col-10 col-sm-auto"> กรุณาเลือกรูป (ขนาดรูปจำกัด 5 MB) <!-- 點擊選擇圖片（單張圖片限5MB） --> </div>
+                <div id="rt_rt_1cbbaf5ea1p1f1mjnfp91s771s951" style="position: absolute; top: 70px; left: 40.563px; width: 268px; height: 30px; overflow: hidden; bottom: auto; right: auto;">
+                  <input type="file" name="file" class="webuploader-element-invisible" multiple="" accept="image/*">
+                  <label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label>
+                </div>
+              </div>
+              <p class="message"><i class="fas fa-exclamation-triangle mr-1"></i>หรือลากและวางภาพไว้ที่นี่ จำกัด 5 ภาพ<!-- 或將圖片拖放到這裡，限5張 --></p>
+            </div>
+            <ul class="filelist">
+            </ul>
+          </div>
+        </div>
+        </div>
+        
+		<div class="col-sm-12 text-center">
+          <div class="red-point-no-small mb-5"><i class="fas fa-exclamation-circle"></i> กรุณาเลือกประเภทคำถาม <!--（錯誤訊息提示）--></div>
+        </div>
+        <div class="text-center mt-5 mb-5">
+          <button class="btn btn-primary1" type="submit">ยืนยันส่งออก<!--確定送出--></button>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="py-4 footer-wrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 text-md-left text-sm-center mobile-text-center"> <img src="images/s_wegame_logo.png">
+        <p class="list-inline">© WeGames Corporation. All Rights Reserved</p>
+      </div>
+      <div class="col-lg-6 col-md-6  ">
+        <ul class="text-md-right text-sm-center mobile-text-center">
+          <li><a href="#">CAREERS</a></li>
+          <li>|</li>
+          <li><a href="terms.html">TERMS OF USE</a></li>
+          <li>|</li>
+          <li><a href="privavy.html">PRIVACY POLICY</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /.container --> 
+</footer>
+<div class="overlay"></div><!--控制點選hamburger後，將遮罩下方body部分，讓使用者著重在ham選單裡的項目-->
+<script  src="js/js.js"></script> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script src="js/all.js"></script>
+
+</body>
+</html>
